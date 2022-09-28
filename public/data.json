@@ -1,0 +1,38 @@
+[
+    {
+      "id": "6334995ecaa72f8ee981b8b0",
+      "time": 22,
+      "name": "Warm Up",
+      "img":"https://img.lovepik.com/free-png/20211106/lovepik-young-mens-outdoor-exercise-warm-up-leg-stretching-png-image_400342505_wh1200.png"
+    },
+    {
+      "id": "6334995ed09db1690c16e1a8",
+      "time": 25,
+      "name": "Squats",
+      "img":"https://upload.wikimedia.org/wikipedia/commons/b/b2/Man-Doing-Air-Squats-A-Bodyweight-Exercise-for-Legs.png"
+    },
+    {
+      "id": "6334995ec79218c5dabde21d",
+      "time": 21,
+      "name": "Push-Ups",
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbIMOmgokH5VlYPu1iwS_PHPnzIzgr8bKhrw&usqp=CAU"
+    },
+    {
+      "id": "6334995e03d5ade530617772",
+      "time": 27,
+      "name": "Back Deadlift",
+      "img":"https://png.pngitem.com/pimgs/s/15-155673_hexagon-deadlift-bar-hd-png-download.png"
+    },
+    {
+      "id": "6334995ed00aff9d22b542aa",
+      "time": 24,
+      "name": "Pullups",
+      "img":"https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTkyNTE0MDcyODc1Mzc3OTkw/best-pull-up-bars_hero.png"
+    },
+    {
+      "id": "6334995e8a972db1c34e3775",
+      "time": 34,
+      "name": "Arms: Dips",
+      "img":"https://thumbs.dreamstime.com/b/man-gym-dip-exercise-bodybuilder-doing-dips-as-arm-training-57241654.jpg"
+    }
+  ]
