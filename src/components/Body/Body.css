@@ -1,14 +1,19 @@
 .body-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    
     
 }
 .items-container{
-    border: 2px solid red;
+    
+    /* border: 2px solid red; */
     margin-left: 50px;
-    margin-top: 30px;
+    
+    margin-top: 80px;
     background-color: rgb(244, 255, 255);
 }
 .cartlist-container{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
+    padding-top: 30px;
 }

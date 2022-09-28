@@ -1,6 +1,7 @@
 import React from 'react';
 import Activities from '../Activities/Activities';
 import Header from '../Header/Header';
+import Profile from '../Profile/Profile';
 import './Body.css'
 
 const Body = () => {
@@ -13,8 +14,8 @@ const Body = () => {
             </div>
 
             <div className='cartlist-container'>
-                this is add to list part
                 
+                <Profile></Profile>
             </div>
         </div>
     );
