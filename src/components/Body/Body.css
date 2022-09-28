@@ -1,0 +1,11 @@
+.body-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
+.items-container{
+    border: 2px solid red;
+}
+.cartlist-container{
+    border: 2px solid orange;
+}
