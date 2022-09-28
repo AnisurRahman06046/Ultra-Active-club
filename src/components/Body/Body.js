@@ -11,8 +11,10 @@ const Body = () => {
                 <Activities></Activities>
                 {/* <h1>this is activity part</h1> */}
             </div>
+
             <div className='cartlist-container'>
                 this is add to list part
+                
             </div>
         </div>
     );
