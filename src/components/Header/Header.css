@@ -4,8 +4,10 @@
 .header{
     display: flex;
     color: rgb(160, 115, 98);
+    margin-left: 40px;
 }
 .header h3 {
     font-weight: bold;
     font-size: 30px;
+    
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Activities.css'
 import Activity from '../Activity/Activity';
 
 const Activities = () => {
@@ -10,11 +11,14 @@ const Activities = () => {
     },[])
     return (
         <div>
-            <h2>Select Today's Exercise</h2>
-            {
-                activities.map(activity=><Activity
-                key={activity.id}></Activity>)
-            }
+            <h2 style={{marginLeft:'50px'}}>Select Today's Exercise</h2>
+            <div className='card-container'>
+                {
+                    activities.map(activity=><Activity
+                    key={activity.id}
+                    activity={activity}></Activity>)
+                }
+            </div>
         </div>
     );
 };
