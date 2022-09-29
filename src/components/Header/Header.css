@@ -5,6 +5,7 @@
     display: flex;
     /* margin-top: 50px;
     margin-left: 100px; */
-    border: 2px solid red;
-    width: 30%;
+    /* border: 2px solid red; */
+    background-color: lightgray;
+  
 }

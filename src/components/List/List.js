@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './List.css'
 import propic from '../../images/myimg.jpg'
 import { addToDb,  addNreakTimeToDb ,getStoredBreakTime} from '../../Utilities/fakedb';
+import { ToastContainer, toast } from 'react-toastify';
+import Swal from 'sweetalert2'
 
 const List = ({items}) => {
     
@@ -18,6 +20,13 @@ const List = ({items}) => {
     let duration = 0;
     for (const item of items){
         duration=duration+item.time
+    }
+    const toastHandler = ()=>{
+        Swal.fire(
+            'Congratulations!',
+            'You completed the activities!',
+            'success'
+          )
     }
     return (
         <div className='list-container'>
@@ -63,7 +72,7 @@ const List = ({items}) => {
                 </div>
             </div>
 
-            <button className='btn-complete'>
+            <button onClick={()=>toastHandler()} className='btn-complete'>
                 <p>Activity Completed</p>
             </button>
         </div>

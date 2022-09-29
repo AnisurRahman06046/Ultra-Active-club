@@ -1,12 +1,13 @@
-
 .container{
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    gap: 10px;
+    grid-template-columns: 3fr 1fr;
+    /* gap: 10px; */
+    
 
     
 
 }
+
 .card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -18,8 +19,11 @@
     background-color: lightsteelblue;
 }
 .list{
+    position: sticky;
+    margin-top: 0;
+    height: 700px;
     background-color: salmon;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* width: 25%; */
 }
 
@@ -33,7 +37,7 @@
 }
 @media screen and (min-width:851px)  and (max-width:1400px){
     .container{
-        grid-template-columns: 2.5fr 1.5fr;
+        grid-template-columns: 3fr 1fr;
     }
     .card{
         grid-template-columns: repeat(3,1fr);

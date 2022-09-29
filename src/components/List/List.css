@@ -1,9 +1,8 @@
 .list-container{
-    position: sticky;
-    top: 0px;
-    margin-top: -80px;
+    
 }
 .profile-container img{
+    
     width: 40px;
     margin-right: 10px;
     border-radius: 20px;
@@ -13,7 +12,7 @@
 .profile-container{
     display: flex;
     margin-left: 25px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 .profile-info{
