@@ -30,22 +30,24 @@ const getStoredCart =()=>{
     return listCart;
 }
 
-// const removeFromDb = id =>{
-//     const storedCart = localStorage.getItem('shopping-cart');
-//     if(storedCart){
-//         const shoppingCart = JSON.parse(storedCart);
-//         if(id in shoppingCart){
-//             delete shoppingCart[id];
-//             localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
-//         }
-//     }
-// }
+const addNreakTimeToDb=(breakTime)=>{
+    // let breakTimeCart ;
+    localStorage.setItem('breaktimeCart',breakTime)
 
-// const deleteShoppingCart = () =>{
-//     localStorage.removeItem('shopping-cart');
-// }
+}
+const getStoredBreakTime =()=>{
+    let breakTime;
+    const storedTime = localStorage.getItem('breaktime');
+    if (storedTime){
+        breakTime = storedTime
+
+    }
+    return breakTime
+}
 
 export {
     addToDb, 
+    addNreakTimeToDb,
+    getStoredBreakTime,
     getStoredCart
 }

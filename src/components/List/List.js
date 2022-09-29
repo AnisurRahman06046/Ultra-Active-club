@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import './List.css'
 import propic from '../../images/myimg.jpg'
-import { addToDb, getStoredCart } from '../../Utilities/fakedb';
+import { addToDb,  addNreakTimeToDb ,getStoredBreakTime} from '../../Utilities/fakedb';
 
 const List = ({items}) => {
     
    const [times,setTimes]=useState(0);
- 
+   
+
    const handleBreakTime = (c)=>{
       setTimes(c)
-      addToDb(c)
+    //   addToDb(c)
+    addNreakTimeToDb(c)
+    
    }
     
     let duration = 0;
