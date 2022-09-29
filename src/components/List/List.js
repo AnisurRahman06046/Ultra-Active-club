@@ -25,13 +25,25 @@ const List = () => {
             </div>
 
 
-            <div>
+            <div className='break-time'>
                 <h3>Add a break</h3>
                 <div className='btn-break-time'>
                     <button>10s</button>
                     <button>20s</button>
                     <button>30s</button>
                     <button>40s</button>
+                </div>
+            </div>
+
+            <div>
+                <h3>Exercise Details</h3>
+                <div className='exercise-time'>
+                    <h4>Exercise time</h4>
+                    <p>0000s</p>
+                </div>
+                <div className='break-time-info'>
+                    <h4>Break Time</h4>
+                    <p>0000s</p>
                 </div>
             </div>
         </div>

@@ -34,6 +34,9 @@
 .age h4{
     margin-bottom: -10px;
 }
+.break-time{
+    padding-top: 30px;
+}
 .btn-break-time{
     background-color: lightblue;
     padding: 20px;
@@ -46,4 +49,18 @@
     border: none;
     border-radius: 20px;
     margin-right: 15px;
+}
+
+.exercise-time{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(220, 242, 250);
+    margin-right: 20px;
+}
+.break-time-info{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(220, 242, 250);
+    margin-right: 20px;
 }
