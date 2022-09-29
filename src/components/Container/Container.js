@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Activities from '../Activities/Activities';
+import './Container.css'
 
 const Container = () => {
+    const [activities,setActivities]=useState([]);
+    useEffect(()=>{
+        fetch('data.json')
+        .then(res=>res.json())
+        .then(data=>setActivities(data))
+    },[])
+
     return (
-        <div>
-             <div className='container text-center'>
-                <div className='row border border-primary'>
-                    <div className='col-8 border border-secondary'>
-                             <h1>activities container</h1>
-                    </div>
-                    <div className='col-4'>
-                            <h1>list container</h1>
-                    </div>
-                </div>
-            </div>
+        <div className='container'>
+            
+             <div className='workouts'>
+                <h1 style={{marginLeft:'100px'}}>items container</h1>
+             <div className='card'>
+                 {
+                    activities.map(activity=><Activities
+                    activity={activity}
+                    key={activity.id}></Activities>)
+                }
+                
+             </div>
+             </div>
+             <div className='list'>
+                <h1>this is list container</h1>
+             </div>
         </div>
     );
 };

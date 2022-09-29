@@ -1,0 +1,17 @@
+.card-info img{
+    width: 286px;
+    height: 286px;
+    
+}
+.card-info{
+    /* border: 1px solid red; */
+    /* padding: 10px; */
+    background-color: rgb(219, 235, 240);
+    border-radius: 10px;
+}
+.card-info button{
+    background-color: orange;
+    width: 100%;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+}
