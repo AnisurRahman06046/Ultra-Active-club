@@ -1,11 +1,24 @@
+
 .container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.5fr 1.5fr;
     gap: 10px;
+
+    
+
 }
 .card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
     padding: 80px;
+}
+.workouts{
+    /* width: 70%; */
+    background-color: lightsteelblue;
+}
+.list{
+    background-color: salmon;
+    border: 2px solid red;
+    /* width: 25%; */
 }

@@ -1,3 +1,8 @@
+.list-container{
+    position: sticky;
+    top: 0px;
+    margin-top: -80px;
+}
 .profile-container img{
     width: 40px;
     margin-right: 10px;
@@ -8,6 +13,8 @@
 .profile-container{
     display: flex;
     margin-left: 25px;
+    border: 2px solid red;
+    
 }
 .profile-info{
     display: flex;
@@ -63,4 +70,22 @@
     justify-content:space-around;
     background-color: rgb(220, 242, 250);
     margin-right: 20px;
+}
+
+.btn-complete{
+    margin-top: 50px;
+    background-color: blue;
+    border: none;
+    margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    /* padding-top: 10px; */
+};
+
+.btn-complete p{
+    color: white;
+    font-weight: bold;
 }
