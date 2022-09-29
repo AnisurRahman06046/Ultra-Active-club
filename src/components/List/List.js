@@ -38,7 +38,10 @@ const List = ({items}) => {
         <div className='list-container'>
             <div className='profile-container'>
                 <img src={propic} alt="" />
+                <div className='profile'>
                 <h3>Amir khan</h3>
+                <small>New York , USA</small>
+                </div>
             </div>
             <div className='profile-info'>
                 <div className='weight'>
