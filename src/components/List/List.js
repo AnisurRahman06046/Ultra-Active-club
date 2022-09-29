@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './List.css'
 import propic from '../../images/myimg.jpg'
+import { addToDb, getStoredCart } from '../../Utilities/fakedb';
 
 const List = ({items}) => {
     
    const [times,setTimes]=useState(0);
+ 
+   const handleBreakTime = (c)=>{
+      setTimes(c)
+      addToDb(c)
+   }
     
     let duration = 0;
     for (const item of items){
@@ -35,10 +41,10 @@ const List = ({items}) => {
             <div className='break-time'>
                 <h3>Add a break</h3>
                 <div className='btn-break-time'>
-                    <button onClick={()=>setTimes(10)}>10s</button>
-                    <button onClick={()=>setTimes(20)}>20s</button>
-                    <button onClick={()=>setTimes(30)}>30s</button>
-                    <button onClick={()=>setTimes(40)}>40s</button>
+                    <button onClick={()=>handleBreakTime(10)}>10s</button>
+                    <button onClick={()=>handleBreakTime(20)}>20s</button>
+                    <button onClick={()=>handleBreakTime(30)}>30s</button>
+                    <button onClick={()=>handleBreakTime(40)}>40s</button>
                 </div>
             </div>
 
