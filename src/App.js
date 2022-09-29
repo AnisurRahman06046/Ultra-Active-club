@@ -2,7 +2,8 @@
 import Container from './components/Container/Container';
 import Header from './components/Header/Header';
 import Questions from './components/Questions/Questions';
-
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Header></Header>
         <Container></Container>
         <Questions></Questions>
+        <ToastContainer></ToastContainer>
     </div>
   );
 }

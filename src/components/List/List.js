@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './List.css'
 import propic from '../../images/myimg.jpg'
-import { addToDb,  addNreakTimeToDb ,getStoredBreakTime} from '../../Utilities/fakedb';
-import Swal from 'sweetalert2'
+import { addNreakTimeToDb ,getStoredBreakTime} from '../../Utilities/fakedb';
+import { toast } from 'react-toastify';
+// import Swal from 'sweetalert2' 
 
 const List = ({items}) => {
-    
+    const notify = () => toast("Congratulations! You have completed the activities");
    const [times,setTimes]=useState(0);
    
    useEffect(()=>{
     const saved = getStoredBreakTime();
-    console.log(saved)
     setTimes(saved)
    },[])
    const handleBreakTime = (c)=>{
@@ -24,13 +24,16 @@ const List = ({items}) => {
     for (const item of items){
         duration=duration+item.time
     }
-    const toastHandler = ()=>{
-        Swal.fire(
-            'Congratulations!',
-            'You completed the activities!',
-            'success'
-          )
-    }
+
+    // it was used before instead of actual toast
+    // const toastHandler = ()=>{
+    //     // Swal.fire(
+    //     //     'Congratulations!',
+    //     //     'You completed the activities!',
+    //     //     'success'
+    //     //   ) 
+    // }
+    
     return (
         <div className='list-container'>
             <div className='profile-container'>
@@ -75,7 +78,7 @@ const List = ({items}) => {
                 </div>
             </div>
 
-            <button onClick={()=>toastHandler()} className='btn-complete'>
+            <button onClick={notify} className='btn-complete'>
                 <p>Activity Completed</p>
             </button>
         </div>
