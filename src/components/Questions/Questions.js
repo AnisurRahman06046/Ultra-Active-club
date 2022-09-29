@@ -3,7 +3,7 @@ import './Questions.css'
 
 const Questions = () => {
     return (
-        <div>
+        <div className='QandA'>
              <h1>Questions and Answers</h1>  
         <details>  
             <summary>How does Reac Work ?</summary>  

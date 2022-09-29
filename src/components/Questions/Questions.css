@@ -1,3 +1,10 @@
+.QandA{
+    background-color: lightcoral;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
 details {    
     background: #eee;    
     color: #444;    
