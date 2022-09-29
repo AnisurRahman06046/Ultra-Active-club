@@ -5,6 +5,7 @@ import './Container.css'
 
 const Container = () => {
     const [activities,setActivities]=useState([]);
+    const [items,setItems]=useState([]);
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -13,6 +14,8 @@ const Container = () => {
 
     const addToList =(activity)=>{
         console.log(activity)
+        const newItem =[...items,activity];
+        setItems(newItem)
     }
 
     return (
@@ -32,7 +35,7 @@ const Container = () => {
              </div>
              <div className='list'>
                 <h1>this is list container</h1>
-                <List></List>
+                <List items={items}></List>
              </div>
         </div>
     );

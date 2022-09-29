@@ -2,7 +2,11 @@ import React from 'react';
 import './List.css'
 import propic from '../../images/myimg.jpg'
 
-const List = () => {
+const List = ({items}) => {
+    let duration = 0;
+    for (const item of items){
+        duration=duration+item.time
+    }
     return (
         <div>
             <div className='profile-container'>
@@ -39,7 +43,7 @@ const List = () => {
                 <h3>Exercise Details</h3>
                 <div className='exercise-time'>
                     <h4>Exercise time</h4>
-                    <p>0000s</p>
+                    <p>{duration} seconds</p>
                 </div>
                 <div className='break-time-info'>
                     <h4>Break Time</h4>

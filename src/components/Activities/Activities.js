@@ -12,8 +12,8 @@ const Activities = (props) => {
              <div className='card-info'>
                 <img src={img} alt="" />
                 <h2>{name}</h2>
-                <h4>Time required :{time} s </h4>
-                <button onClick={()=>addToList(time)} >
+                <h4>Time required : {time} s </h4>
+                <button onClick={()=>addToList(props.activity)} >
                 <p>Add to list</p>
             </button>
             
