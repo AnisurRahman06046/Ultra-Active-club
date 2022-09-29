@@ -9,7 +9,11 @@ const Container = () => {
         fetch('data.json')
         .then(res=>res.json())
         .then(data=>setActivities(data))
-    },[])
+    },[]);
+
+    const addToList =(activity)=>{
+        console.log(activity)
+    }
 
     return (
         <div className='container'>
@@ -20,7 +24,8 @@ const Container = () => {
                  {
                     activities.map(activity=><Activities
                     activity={activity}
-                    key={activity.id}></Activities>)
+                    key={activity.id}
+                    addToList={addToList}></Activities>)
                 }
                 
              </div>
