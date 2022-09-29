@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 import './List.css'
 import propic from '../../images/myimg.jpg'
 import { addToDb,  addNreakTimeToDb ,getStoredBreakTime} from '../../Utilities/fakedb';
-import { ToastContainer, toast } from 'react-toastify';
 import Swal from 'sweetalert2'
 
 const List = ({items}) => {
     
    const [times,setTimes]=useState(0);
    
-
+   useEffect(()=>{
+    const saved = getStoredBreakTime();
+    console.log(saved)
+    setTimes(saved)
+   },[])
    const handleBreakTime = (c)=>{
       setTimes(c)
     //   addToDb(c)
